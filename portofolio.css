@@ -1,0 +1,179 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  background: linear-gradient(135deg, #ffb6c1, #d18ce0);
+  /* #ffb6c1 = soft pink, #d18ce0 = ungu lembut */
+  color: #000;
+  min-height: 100vh;
+}
+header {
+  display: flex;
+  justify-content: flex-end;
+  padding: 15px 30px;
+}
+nav a {
+  margin-left: 30px;
+  text-decoration: none;
+  color: #000;
+  font-weight: bold;
+  font-size: 14px;
+}
+.top-section {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 60px 20px;
+}
+.top-left {
+  max-width: 550px;
+}
+.top-left p.top-name {
+  font-weight: 900;
+  font-size: 28px;
+  margin: 10px 0 0 0;
+}
+.top-left p.sub-name {
+  font-weight: 700;
+  font-size: 18px;
+  margin: 12px 0;
+}
+.top-left p.description {
+  font-weight: 400;
+  font-size: 14px;
+  max-width: 480px;
+}
+.whatsapp-btn {
+  margin-top: 20px;
+  background-color: #ff69b4; /* pink cerah */
+  color: black;
+  font-weight: 700;
+  padding: 8px 12px;
+  border-radius: 5px;
+  display: inline-block;
+  text-decoration: none;
+  transition: 0.3s;
+}
+.whatsapp-btn:hover {
+  background-color: #d84fd1; /* efek hover ungu muda */
+  color: white;
+}
+.top-right img {
+  width: 230px;
+  height: 230px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 5px solid #d46bcb;
+}
+
+.main-content {
+  max-width: 1200px;
+  margin: 40px auto;
+  padding: 0 20px;
+  color: #000;
+}
+.about {
+  display: flex;
+  align-items: center;
+  gap: 50px;
+  margin-bottom: 50px;
+  flex-wrap: wrap;
+}
+.about img {
+  width: 180px;
+  height: 180px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 5px solid #d46bcb;
+}
+.about-text {
+  max-width: 700px;
+}
+.about-text h2 {
+  font-weight: 900;
+  margin-bottom: 4px;
+}
+.about-text p.title {
+  margin: 0 0 12px 0;
+  font-weight: 700;
+  font-size: 18px;
+}
+.about-text p.description {
+  font-size: 14px;
+  line-height: 1.4;
+  margin-bottom: 12px;
+}
+.download-cv {
+  color: #b5009e;
+  font-weight: 700;
+  text-decoration: none;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.services {
+  max-width: 1200px;
+  margin: 0 auto 40px;
+  padding: 0 10px;
+}
+.services h3 {
+  font-weight: 700;
+  margin-bottom: 25px;
+}
+.service-list {
+  display: flex;
+  justify-content: space-between;
+  gap: 25px;
+  flex-wrap: wrap;
+}
+.service-item {
+  background: rgba(255, 255, 255, 0.3);
+  border-radius: 15px;
+  padding: 15px;
+  flex: 1 1 30%;
+  max-width: 350px;
+  text-align: center;
+  font-size: 14px;
+  backdrop-filter: blur(8px);
+}
+.service-item img {
+  max-width: 100%;
+  border-radius: 10px;
+  margin-bottom: 12px;
+}
+.service-title {
+  font-weight: 700;
+  margin-bottom: 12px;
+}
+.service-desc {
+  line-height: 1.5;
+}
+
+@media(max-width: 900px) {
+  .top-section {
+    flex-direction: column;
+    text-align: center;
+  }
+  .top-left {
+    max-width: 100%;
+    margin-bottom: 30px;
+  }
+  .about {
+    flex-direction: column;
+    text-align: center;
+  }
+  .about-text {
+    max-width: 100%;
+  }
+  .service-list {
+    flex-direction: column;
+    gap: 30px;
+  }
+  .service-item {
+    max-width: 100%;
+  }
+}

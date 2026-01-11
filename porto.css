@@ -1,0 +1,52 @@
+@font-face {
+    font-family: good food ;
+    src: url('GoodFood-Regular,ttf')format('truetype')
+}
+
+@font-face {
+  font-family: lemon, sans-serif;
+  src: url('lemon-Reguler,ttf')format();
+}
+* { 
+ margin: 0;
+ padding: 0;
+}
+body {
+  background-color: darksalmon;
+}
+header {
+  position: fixed;
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+  background-color: lightcoral;
+    transform: blur(5px);
+}
+.logo {
+  font-family: goodfood;
+  font-size: 40px;
+  color: white;
+
+}
+.navigation ul {
+  list-style: none;
+  display: flex;
+  gap: 30px;
+}
+.navigation a{
+  text-decoration: none;
+  list-style: none;
+  color: white;
+  font-family: goodfood;
+  font-size: 20px;
+  margin: 20px;
+  align-items: center;
+  display: flex;
+  position: relative;
+  padding: 5px 0;
+}
+nav :hover {
+    color: moccasin;
+
+}
